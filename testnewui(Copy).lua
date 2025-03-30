@@ -28,7 +28,8 @@ local v2 = {
             Title = Color3.fromRGB(255, 255, 255),
             LoaderBackground = Color3.fromRGB(40, 40, 40),
             LoaderSplash = Color3.fromRGB(3, 252, 3)
-            
+        }
+    },
             -- Phát âm thanh
 local function playSound()
     local sound = Instance.new("Sound", game:GetService("CoreGui"))
