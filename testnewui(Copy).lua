@@ -28,7 +28,7 @@ end
   })
 
        MinimizeButton({
-       Image = "http://www.roblox.com/asset/?id=133634881016886",
+       Image = "https://create.roblox.com/store/asset/125303331096468/51i5ScZaGGL",
        Size = {60, 60},
        Color = Color3.fromRGB(10, 10, 10),
        Corner = true,
@@ -40,56 +40,50 @@ end
      local Tab1o = MakeTab({Name = "Main"})
      local Tab2o = MakeTab({Name = "Setting Farm"})
      local Tab3o = MakeTab({Name = "Race V4"})
+     local Tab4o = MakeTab({Name = "Misc"})
      
      
 -------TOGGLE 
 
      Toggle = AddToggle(Tab1o, {
-      Name = "Setting Farm",
+      Name = "Farm Level (🔴)",
       Default = false,
       Callback = function()
      end
     })
     
-------- BUTTON
+    Toggle = AddToggle(Tab1o, {
+      Name = "Farm Bone(🔴)",
+      Default = false,
+      Callback = function()
+     end
+    })
     
-    AddButton(Tab1o, {
-     Name = "FIX LAG",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-  end
-  })
-     AddButton(Tab1o, {
-     Name = "SCRIPT",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "2",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "3",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "4",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "FIX LAG",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-  end
-  })
------ Dropdown 
-
+    Toggle = AddToggle(Tab1o, {
+      Name = "Farm Cake Prince(🔴)",
+      Default = false,
+      Callback = function()
+     end
+    })
+    
+     Toggle = AddToggle(Tab2o, {
+      Name = "Auto CDK(🟡)",
+      Default = false,
+      Callback = function()
+     end
+    })
+    
+    Toggle = AddToggle(Tab2o, {
+      Name = "Auto SkullGuitar (🟡)",
+      Default = false,
+      Callback = function()
+     end
+    })
+   
+------- DROPDOWN
   Dropdown = AddDropdown(Tab1o, {
-     Name = "a",
-     Options = {"Test 1", "Test 2", "Test 3", "Test 4"},
+     Name = "Choose Melee",
+     Options = {"God Human", "Sanguiart", "Dragon Talon", "Electric Claw"},
      Default = "Melee",
      Callback = function()
      end
