@@ -1,35 +1,4 @@
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
-
-shared.LoaderTitle = "Đăng Ký Kênh PhatDepZai Hub";
-shared.LoaderKeyFrames = {
-    [1] = {
-        1,
-        10
-    },
-    [2] = {
-        2,
-        30
-    },
-    [3] = {
-        3,
-        60
-    },
-    [4] = {
-        2,
-        100
-    }
-};
-local v2 = {
-    LoaderData = {
-        Name = shared.LoaderTitle or "A Loader",
-        Colors = shared.LoaderColors or {
-            Main = Color3.fromRGB(0, 0, 0),
-            Topic = Color3.fromRGB(200, 200, 200),
-            Title = Color3.fromRGB(255, 255, 255),
-            LoaderBackground = Color3.fromRGB(40, 40, 40),
-            LoaderSplash = Color3.fromRGB(3, 252, 3)
-        }
-    },
             -- Phát âm thanh
 local function playSound()
     local sound = Instance.new("Sound", game:GetService("CoreGui"))
@@ -37,7 +6,6 @@ local function playSound()
     sound.Volume = 10
     sound:Play()
 end
-
 
        local Window = MakeWindow({
          Hub = {
